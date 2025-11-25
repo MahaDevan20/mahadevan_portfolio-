@@ -116,3 +116,58 @@
 2025-11-25 18:04:43,635 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
 2025-11-25 18:04:43,673 - werkzeug - WARNING -  * Debugger is active!
 2025-11-25 18:04:43,683 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:14:26,666 - werkzeug - INFO -  * Detected change in 'd:\\Portfolio\\app.py', reloading
+2025-11-25 18:14:26,751 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:14:27,648 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:14:27,648 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:14:27,660 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:14:27,713 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:14:27,720 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:14:35,033 - werkzeug - INFO -  * Detected change in 'd:\\Portfolio\\app.py', reloading
+2025-11-25 18:14:35,116 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:14:35,868 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:14:35,868 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:14:35,869 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:14:35,913 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:14:35,920 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:14:48,895 - werkzeug - INFO -  * Detected change in 'd:\\Portfolio\\app.py', reloading
+2025-11-25 18:14:48,959 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:14:49,623 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:14:49,623 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:14:49,629 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:14:49,664 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:14:49,676 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:21:15,929 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:21:15,929 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:21:15,933 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:21:16,028 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.112:5001
+2025-11-25 18:21:16,034 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 18:21:16,037 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:21:16,725 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:21:16,725 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:21:16,725 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:21:16,775 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:21:16,777 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:21:22,876 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 18:21:22] "GET / HTTP/1.1" 200 -
+2025-11-25 18:21:23,430 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 18:21:23] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-25 18:21:23,474 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 18:21:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-25 18:21:23,616 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 18:21:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-11-25 18:21:24,428 - __main__ - WARNING - 404 error: http://127.0.0.1:5001/favicon.ico
+2025-11-25 18:21:24,433 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 18:21:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-25 18:21:56,737 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:21:56,737 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:21:56,740 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:21:56,822 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.112:5001
+2025-11-25 18:21:56,822 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 18:21:56,822 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:21:57,476 - __main__ - ERROR - Email configuration missing: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:21:57,476 - __main__ - WARNING - Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.
+2025-11-25 18:21:57,479 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:21:57,519 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:21:57,524 - werkzeug - INFO -  * Debugger PIN: 615-009-449

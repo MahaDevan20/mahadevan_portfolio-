@@ -52,19 +52,25 @@ rate_limit_store = defaultdict(list)
 def validate_config():
     """Validate required configuration on startup"""
     errors = []
-    
+
     if not app.config['MAIL_USERNAME']:
         errors.append("MAIL_USERNAME is not set")
     if not app.config['MAIL_PASSWORD']:
         errors.append("MAIL_PASSWORD is not set")
     if not RECIPIENT_EMAIL:
         errors.append("RECIPIENT_EMAIL is not set")
-    
-    if errors and FLASK_ENV == 'production':
-        logger.error("Configuration errors: " + ", ".join(errors))
-        raise ValueError("Missing required configuration: " + ", ".join(errors))
-    elif errors:
-        logger.warning("Configuration warnings: " + ", ".join(errors))
+
+    # Determine whether email functionality is configured.
+    # Do not raise on import to avoid crashing WSGI workers; instead disable contact form if missing.
+    global EMAIL_CONFIGURED
+    EMAIL_CONFIGURED = len(errors) == 0
+
+    if not EMAIL_CONFIGURED:
+        # In production we log an error so you're aware, but we avoid raising here so the app can boot.
+        logger.error("Email configuration missing: " + ", ".join(errors))
+        logger.warning("Contact form will be disabled until MAIL_USERNAME, MAIL_PASSWORD, and RECIPIENT_EMAIL are configured.")
+    else:
+        logger.info("Email configuration present.")
 
 validate_config()
 
@@ -126,6 +132,13 @@ def download_resume():
 @app.route("/contact", methods=['POST'])
 def contact():
     client_ip = get_client_ip()
+    # If email is not configured, return a clear error instead of attempting to send
+    if not globals().get('EMAIL_CONFIGURED', False):
+        logger.warning(f"Contact form attempt while email not configured (IP: {client_ip})")
+        return jsonify({
+            'success': False,
+            'message': 'Contact form is temporarily disabled because email is not configured. Please contact me directly via the email address shown on the site.'
+        }), 503
     
     try:
         # Check rate limiting
