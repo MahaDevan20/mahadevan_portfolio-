@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Mahadevan Nair M P - Portfolio | Full-Stack Developer & AI Enthusiast
+    </title>
+    <meta
+      name="title"
+      content="Mahadevan Nair M P - Portfolio | Full-Stack Developer & AI Enthusiast"
+    />
+    <meta
+      name="description"
+      content="Aspiring computer science graduate with hands-on experience in full-stack development and AI-integrated projects. Specializing in Python, Flask, and modern web technologies."
+    />
+    <meta
+      name="keywords"
+      content="Mahadevan Nair, Full-Stack Developer, Python Developer, Flask Developer, AI Developer, Web Developer, Portfolio"
+    />
+    <meta name="author" content="Mahadevan Nair M P" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ request.url }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ request.url }}" />
+    <meta
+      property="og:title"
+      content="Mahadevan Nair M P - Portfolio | Full-Stack Developer & AI Enthusiast"
+    />
+    <meta
+      property="og:description"
+      content="Aspiring computer science graduate with hands-on experience in full-stack development and AI-integrated projects."
+    />
+    <meta
+      property="og:image"
+      content="{{ url_for('static', filename='images/maha.png', _external=True) }}"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ request.url }}" />
+    <meta
+      property="twitter:title"
+      content="Mahadevan Nair M P - Portfolio | Full-Stack Developer & AI Enthusiast"
+    />
+    <meta
+      property="twitter:description"
+      content="Aspiring computer science graduate with hands-on experience in full-stack development and AI-integrated projects."
+    />
+    <meta
+      property="twitter:image"
+      content="{{ url_for('static', filename='images/maha.png', _external=True) }}"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              gradient: "gradient 15s ease infinite",
+              "fade-in": "fadeIn 0.5s ease-in",
+              "slide-up": "slideUp 0.5s ease-out",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              gradient: {
+                "0%, 100%": { backgroundPosition: "0% 50%" },
+                "50%": { backgroundPosition: "100% 50%" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(30px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Custom CSS for additional styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body
+    id="top"
+    class="bg-white dark:bg-gray-900 transition-colors duration-300"
+  >
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 dark:!bg-gray-900 dark:backdrop-blur-none border-b-2 border-blue-200 dark:border-gray-700 shadow-sm dark:shadow-xl transition-all duration-300"
+      role="navigation"
+      aria-label="Main navigation"
+      style="--tw-bg-opacity: 1"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+          <div
+            class="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:text-white"
+          >
+            Mahadevan Nair M P
+          </div>
+          <div class="flex items-center gap-4 md:gap-8">
+            <a
+              href="#work"
+              class="text-indigo-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors text-sm md:text-base"
+              aria-label="View my work"
+              >work</a
+            >
+            <a
+              href="#about"
+              class="text-indigo-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors text-sm md:text-base"
+              aria-label="Learn about me"
+              >about</a
+            >
+            <a
+              href="{{ url_for('download_resume') }}"
+              class="text-indigo-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors text-sm md:text-base"
+              aria-label="Download my resume"
+              >resume</a
+            >
+            <a
+              href="#contact"
+              class="text-indigo-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors text-sm md:text-base"
+              aria-label="Contact me"
+              >let's chat</a
+            >
+            <button
+              class="w-10 h-10 rounded-full border-2 border-indigo-300 dark:border-gray-700 bg-white dark:bg-gray-800 flex items-center justify-center hover:bg-indigo-50 dark:hover:bg-gray-700 transition-all relative shadow-sm"
+              id="themeToggle"
+              aria-label="Toggle dark mode"
+              type="button"
+            >
+              <span
+                class="theme-icon sun-icon text-lg absolute inset-0 flex items-center justify-center transition-opacity duration-300"
+                aria-hidden="true"
+                >☀️</span
+              >
+              <span
+                class="theme-icon moon-icon text-lg absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none"
+                aria-hidden="true"
+                >🌙</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO / HOME SECTION -->
+    <main id="main-content">
+      <section
+        id="home"
+        class="min-h-screen flex items-center justify-center pt-20 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        aria-label="Introduction"
+      >
+        <!-- Animated Background Gradient -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-blue-100 via-indigo-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900"
+        ></div>
+        <div
+          class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmOWZhZmIiIGZpbGwtb3BhY2l0eT0iMC40Ij48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"
+        ></div>
+
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero Image with Animation -->
+            <div class="order-2 lg:order-1 flex justify-center lg:justify-end">
+              <div class="relative">
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl blur-2xl opacity-30 animate-pulse"
+                ></div>
+                <div
+                  class="relative bg-white dark:bg-gray-800 rounded-3xl p-2 shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/maha.png') }}"
+                    alt="Mahadevan Nair M P"
+                    class="w-64 h-80 md:w-80 md:h-96 object-cover rounded-2xl animate-float"
+                  />
+                </div>
+                <!-- Floating Icons -->
+                <div
+                  class="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl animate-bounce"
+                  style="animation-delay: 0.5s"
+                >
+                  💻
+                </div>
+                <div
+                  class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl animate-bounce"
+                  style="animation-delay: 1s"
+                >
+                  🚀
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div
+              class="order-1 lg:order-2 text-center lg:text-left animate-slide-up"
+            >
+              <div
+                class="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white text-sm font-semibold shadow-lg"
+              >
+                👋 Full-Stack Developer & AI Enthusiast
+              </div>
+              <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight"
+              >
+                Hi, I'm
+                <span
+                  class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                  >Mahadevan Nair M P</span
+                >
+              </h1>
+              <p
+                class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-6 font-medium"
+              >
+                I craft digital experiences,<br class="hidden md:block" />
+                powered by
+                <span class="text-blue-600 dark:text-blue-400">AI</span> and
+                modern web technologies
+              </p>
+              <p
+                class="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed"
+              >
+                Aspiring computer science graduate with hands-on experience in
+                full-stack development and AI-integrated projects. Passionate
+                about creating innovative solutions that combine functionality
+                with elegant design.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="#work"
+                  class="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+                >
+                  View My Work
+                </a>
+                <a
+                  href="#contact"
+                  class="px-8 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 text-center"
+                >
+                  Get In Touch
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK / PROJECTS -->
+      <section
+        id="work"
+        class="py-20 md:py-32 bg-gradient-to-b from-indigo-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800"
+        aria-label="My work"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:text-white mb-4"
+            >
+              Work Gallery
+            </h2>
+            <p
+              class="text-indigo-700 dark:text-gray-400 max-w-2xl mx-auto font-medium"
+            >
+              Explore my recent projects and creative solutions
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="relative h-48 bg-gradient-to-br from-blue-400 to-purple-500 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&h=600&fit=crop"
+                  alt="FlavorFusion Recipe Generator"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%234F46E5\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' font-family=\'Arial\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3ERecipe Generator%3C/text%3E%3C/svg%3E'"
+                />
+                <div
+                  class="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-gray-900/90 rounded-full text-xs font-semibold text-gray-800 dark:text-white"
+                >
+                  AI Project
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                >
+                  FlavorFusion: AI-Powered Recipe Generator
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed"
+                >
+                  Designed and developed a web application that generates
+                  personalized recipes using the Gemini AI API based on
+                  user-input ingredients and preferences.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
+                    >Python</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium"
+                    >Flask</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium"
+                    >Gemini AI</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="relative h-48 bg-gradient-to-br from-green-400 to-teal-500 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop"
+                  alt="Hand Gesture Music System"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%2310B981\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' font-family=\'Arial\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EGesture Control%3C/text%3E%3C/svg%3E'"
+                />
+                <div
+                  class="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-gray-900/90 rounded-full text-xs font-semibold text-gray-800 dark:text-white"
+                >
+                  Computer Vision
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"
+                >
+                  Hand Gesture-Based Music System
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed"
+                >
+                  Developed a system that interprets hand gestures using
+                  computer vision and triggers corresponding musical notes or
+                  commands in real-time.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
+                    >Python</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-xs font-medium"
+                    >OpenCV</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-xs font-medium"
+                    >MediaPipe</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-xs font-medium"
+                    >CV</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 md:col-span-2 lg:col-span-1"
+            >
+              <div
+                class="relative h-48 bg-gradient-to-br from-red-400 to-pink-500 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop"
+                  alt="Hemolink Blood Bank System"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%23EF4444\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' font-family=\'Arial\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EBlood Bank%3C/text%3E%3C/svg%3E'"
+                />
+                <div
+                  class="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-gray-900/90 rounded-full text-xs font-semibold text-gray-800 dark:text-white"
+                >
+                  Web App
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors"
+                >
+                  Hemolink: Blood Bank Management System
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed"
+                >
+                  Developed a Flask-based web application to manage donor
+                  registrations, blood inventory, and admin functionalities with
+                  secure authentication.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
+                    >Python</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium"
+                    >Flask</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium"
+                    >HTML/CSS</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section
+        id="about"
+        class="py-20 md:py-32 bg-gradient-to-b from-white via-blue-50 to-indigo-50 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900"
+        aria-label="About me"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent dark:text-white mb-4"
+            >
+              About Me
+            </h2>
+            <p
+              class="text-lg text-indigo-700 dark:text-gray-200 italic font-medium"
+            >
+              I design digital experiences with analytical clarity, intention,
+              and a strong understanding of first principles
+            </p>
+          </div>
+          <div
+            class="space-y-6 text-gray-700 dark:text-gray-200 text-base md:text-lg leading-relaxed"
+          >
+            <p>
+              Aspiring computer science graduate with hands-on experience in
+              full-stack development and AI-integrated projects. I am passionate
+              about creating innovative solutions that combine functionality
+              with elegant design, leveraging cutting-edge technologies to solve
+              real-world problems.
+            </p>
+            <p>
+              My expertise spans across Python, Flask, and machine learning,
+              with a strong foundation in web development, database management,
+              and AI integration. Currently pursuing my Master's in Computer
+              Applications, I am continuously expanding my knowledge in emerging
+              frameworks, AI technologies, and best practices in software
+              development.
+            </p>
+            <p>
+              I started out exploring data science, but working with code made
+              me realize I cared more about the people behind the technology
+              than the technology itself. I began building web applications and
+              got hooked on how design and development shape user behavior and
+              decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section
+        id="education"
+        class="py-20 md:py-32 bg-gradient-to-b from-purple-50 via-pink-50 to-blue-50 dark:from-gray-800 dark:to-gray-900"
+        aria-label="Education"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16"
+          >
+            Education
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-6 md:gap-8">
+              <div class="flex-shrink-0 w-24 md:w-32 text-right">
+                <div
+                  class="text-sm md:text-base font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent dark:text-blue-400 uppercase tracking-wide"
+                >
+                  Ongoing
+                </div>
+              </div>
+              <div
+                class="flex-1 pb-8 border-l-2 border-purple-300 dark:border-gray-700 pl-6 md:pl-8"
+              >
+                <h3
+                  class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Master of Computer Applications (MCA)
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 font-medium mb-2">
+                  Rajagiri College of Social Sciences (Autonomous)
+                </p>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Kochi, Kerala | Pursuing advanced studies in computer
+                  applications with focus on modern software development
+                  practices.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-6 md:gap-8">
+              <div class="flex-shrink-0 w-24 md:w-32 text-right">
+                <div
+                  class="text-sm md:text-base font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent dark:text-blue-400 uppercase tracking-wide"
+                >
+                  May 2025
+                </div>
+              </div>
+              <div
+                class="flex-1 pb-8 border-l-2 border-purple-300 dark:border-gray-700 pl-6 md:pl-8"
+              >
+                <h3
+                  class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Bachelor of Science in Computer Science
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 font-medium mb-2">
+                  IHRD CAS Kaduthuruthy
+                </p>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Kottayam, Kerala | Graduated with a strong foundation in
+                  computer science fundamentals, programming, and software
+                  engineering.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-6 md:gap-8">
+              <div class="flex-shrink-0 w-24 md:w-32 text-right">
+                <div
+                  class="text-sm md:text-base font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent dark:text-blue-400 uppercase tracking-wide"
+                >
+                  May 2022
+                </div>
+              </div>
+              <div
+                class="flex-1 pb-8 border-l-2 border-purple-300 dark:border-gray-700 pl-6 md:pl-8"
+              >
+                <h3
+                  class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Higher Secondary Education in Computer Science
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 font-medium mb-2">
+                  St. Paul's English Medium HSS
+                </p>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Malappuram, Kerala
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-6 md:gap-8">
+              <div class="flex-shrink-0 w-24 md:w-32 text-right">
+                <div
+                  class="text-sm md:text-base font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent dark:text-blue-400 uppercase tracking-wide"
+                >
+                  May 2020
+                </div>
+              </div>
+              <div
+                class="flex-1 border-l-2 border-purple-300 dark:border-gray-700 pl-6 md:pl-8"
+              >
+                <h3
+                  class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  High School
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 font-medium mb-2">
+                  Bhavan's Vidyashram Chelambra
+                </p>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Malappuram, Kerala
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="py-20 md:py-32 bg-gradient-to-b from-teal-50 via-cyan-50 to-blue-50 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900"
+        aria-label="Skills"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent dark:text-white mb-16"
+          >
+            Skills
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Programming Languages -->
+            <div
+              class="bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 hover:shadow-xl transition-shadow border-2 border-blue-300/50 dark:border-gray-600"
+            >
+              <h3
+                class="text-lg font-bold text-gray-900 dark:text-white mb-6 text-center"
+              >
+                Programming Languages
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                    alt="Python"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Python
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png"
+                    alt="C/C++"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    C/C++
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"
+                    alt="PHP"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    PHP
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
+                    alt="Java"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Java
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend Technologies -->
+            <div
+              class="bg-gradient-to-br from-emerald-100 via-teal-200 to-cyan-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 hover:shadow-xl transition-shadow border-2 border-emerald-300/50 dark:border-gray-600"
+            >
+              <h3
+                class="text-lg font-bold text-gray-900 dark:text-white mb-6 text-center"
+              >
+                Frontend Technologies
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/919/919827.png"
+                    alt="HTML"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    HTML
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
+                    alt="CSS"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    CSS
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-xl hover:scale-110 transition-transform col-span-2"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                    alt="JavaScript"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    JavaScript
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend & Frameworks -->
+            <div
+              class="bg-gradient-to-br from-purple-100 via-pink-200 to-rose-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 hover:shadow-xl transition-shadow border-2 border-purple-300/50 dark:border-gray-600"
+            >
+              <h3
+                class="text-lg font-bold text-gray-900 dark:text-white mb-6 text-center"
+              >
+                Backend & Frameworks
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                    alt="Flask"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Flask
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png"
+                    alt="MySQL"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    MySQL
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-xl hover:scale-110 transition-transform col-span-2"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png"
+                    alt="Git"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Git
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI & APIs -->
+            <div
+              class="bg-gradient-to-br from-orange-100 via-amber-200 to-yellow-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 hover:shadow-xl transition-shadow border-2 border-orange-300/50 dark:border-gray-600"
+            >
+              <h3
+                class="text-lg font-bold text-gray-900 dark:text-white mb-6 text-center"
+              >
+                AI & APIs
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png"
+                    alt="Gemini AI"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-xs font-medium text-gray-700 dark:text-gray-300 text-center"
+                  >
+                    Gemini AI
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                    alt="OpenCV"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    OpenCV
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-xl hover:scale-110 transition-transform col-span-2"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                    alt="MediaPipe"
+                    class="w-12 h-12 mb-2"
+                  />
+                  <p
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    MediaPipe
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="py-20 md:py-32 bg-gradient-to-b from-violet-50 via-purple-50 to-fuchsia-50 dark:from-gray-800 dark:to-gray-900"
+        aria-label="Contact"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16"
+          >
+            Let's Chat
+          </h2>
+          <div class="grid md:grid-cols-2 gap-12 lg:gap-16">
+            <!-- Contact Info -->
+            <div>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your visions.
+              </p>
+              <div class="space-y-6">
+                <div
+                  class="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-shadow border border-violet-200 dark:border-gray-700"
+                >
+                  <div class="text-2xl" aria-hidden="true">📧</div>
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-1"
+                    >
+                      Email
+                    </h4>
+                    <a
+                      href="mailto:mahadevannair16@gmail.com"
+                      class="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      aria-label="Send email to mahadevannair16@gmail.com"
+                    >
+                      mahadevannair16@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-shadow border border-violet-200 dark:border-gray-700"
+                >
+                  <div class="text-2xl" aria-hidden="true">📍</div>
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-1"
+                    >
+                      Location
+                    </h4>
+                    <p class="text-gray-900 dark:text-white">Kerala, India</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-shadow border border-violet-200 dark:border-gray-700"
+                >
+                  <div class="text-2xl" aria-hidden="true">💼</div>
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-1"
+                    >
+                      LinkedIn
+                    </h4>
+                    <a
+                      href="https://www.linkedin.com/in/mahadevan-nair-m-p-5739b92a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      aria-label="Visit my LinkedIn profile"
+                    >
+                      Mahadevan Nair M P
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-shadow border border-violet-200 dark:border-gray-700"
+                >
+                  <div class="text-2xl" aria-hidden="true">🐙</div>
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-1"
+                    >
+                      GitHub
+                    </h4>
+                    <a
+                      href="https://github.com/MahaDevan20"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      aria-label="Visit my GitHub profile"
+                    >
+                      github.com/MahaDevan20
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-shadow border border-violet-200 dark:border-gray-700"
+                >
+                  <div class="text-2xl" aria-hidden="true">📄</div>
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-1"
+                    >
+                      Resume
+                    </h4>
+                    <a
+                      href="{{ url_for('download_resume') }}"
+                      class="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      aria-label="Download my resume as PDF"
+                    >
+                      Download Resume
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+              class="bg-gradient-to-br from-white to-violet-50 dark:bg-gray-800 rounded-2xl p-8 shadow-xl border-2 border-violet-200 dark:border-gray-700"
+            >
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                Send a Message
+              </h3>
+              <form
+                id="contactForm"
+                aria-label="Contact form"
+                class="space-y-6"
+              >
+                <div>
+                  <label for="name" class="sr-only">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    aria-required="true"
+                    aria-invalid="false"
+                    class="w-full px-4 py-3 border-b-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-colors"
+                  />
+                  <span
+                    class="error-message block mt-2 text-sm text-red-600 dark:text-red-400"
+                    id="name-error"
+                    role="alert"
+                    aria-live="polite"
+                  ></span>
+                </div>
+                <div>
+                  <label for="email" class="sr-only">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    aria-required="true"
+                    aria-invalid="false"
+                    class="w-full px-4 py-3 border-b-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-colors"
+                  />
+                  <span
+                    class="error-message block mt-2 text-sm text-red-600 dark:text-red-400"
+                    id="email-error"
+                    role="alert"
+                    aria-live="polite"
+                  ></span>
+                </div>
+                <div>
+                  <label for="message" class="sr-only">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                    aria-required="true"
+                    aria-invalid="false"
+                    class="w-full px-4 py-3 border-b-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-colors resize-none"
+                  ></textarea>
+                  <span
+                    class="error-message block mt-2 text-sm text-red-600 dark:text-red-400"
+                    id="message-error"
+                    role="alert"
+                    aria-live="polite"
+                  ></span>
+                </div>
+                <div
+                  id="form-message"
+                  class="form-message hidden p-4 rounded-lg text-sm"
+                  role="alert"
+                  aria-live="polite"
+                ></div>
+                <button
+                  type="submit"
+                  class="w-full px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  id="submit-btn"
+                >
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-spinner hidden" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 dark:bg-black text-gray-400 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p>&copy; 2025 Mahadevan Nair M P. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <a
+      href="#top"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform opacity-0 invisible scroll-top"
+      id="scrollTop"
+      aria-label="Scroll to top"
+    >
+      <span aria-hidden="true" class="text-xl">↑</span>
+    </a>
+
+    <!-- Toast Notification Container -->
+    <div
+      id="toast-container"
+      class="fixed top-24 right-4 z-50 space-y-4"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+
+    <!-- Link JS File -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

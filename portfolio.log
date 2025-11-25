@@ -1,0 +1,106 @@
+2025-11-23 17:11:14,383 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 17:11:14,383 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 17:11:14,454 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.112:5000
+2025-11-23 17:11:14,455 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-23 17:11:14,456 - werkzeug - INFO -  * Restarting with stat
+2025-11-23 17:11:14,712 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 17:11:14,712 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 17:11:14,731 - werkzeug - WARNING -  * Debugger is active!
+2025-11-23 17:11:14,733 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-23 17:11:18,823 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 17:11:18] "GET / HTTP/1.1" 200 -
+2025-11-23 17:11:18,982 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 17:11:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-23 17:11:18,986 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 17:11:18] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 17:11:19,024 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 17:11:19] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 17:11:19,228 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-11-23 17:11:19,228 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 17:11:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-23 17:41:46,917 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:41:46] "GET / HTTP/1.1" 200 -
+2025-11-23 17:41:47,062 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:41:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-23 17:41:47,065 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:41:47] "GET /static/images/maha.png HTTP/1.1" 200 -
+2025-11-23 17:41:47,130 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:41:47] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 17:41:47,467 - __main__ - WARNING - 404 error: http://192.168.29.112:5000/favicon.ico
+2025-11-23 17:41:47,468 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:41:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-23 17:52:31,235 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:52:31] "GET / HTTP/1.1" 200 -
+2025-11-23 17:52:31,306 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:52:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-23 17:52:31,306 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:52:31] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 17:52:31,668 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:52:31] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 17:59:56,377 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:59:56] "GET / HTTP/1.1" 200 -
+2025-11-23 17:59:56,402 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:59:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 17:59:56,411 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:59:56] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 17:59:56,533 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 17:59:56] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 18:04:45,149 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 18:04:45] "GET / HTTP/1.1" 200 -
+2025-11-23 18:04:45,171 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 18:04:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 18:04:45,174 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 18:04:45] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 18:04:45,263 - werkzeug - INFO - 192.168.29.112 - - [23/Nov/2025 18:04:45] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 18:31:27,448 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:31:27] "GET / HTTP/1.1" 200 -
+2025-11-23 18:31:27,608 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:31:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-23 18:31:27,608 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:31:27] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 18:31:27,818 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:31:27] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-23 18:31:28,492 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-11-23 18:31:28,494 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:31:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-23 18:37:40,042 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:37:40] "GET / HTTP/1.1" 200 -
+2025-11-23 18:37:40,065 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:37:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 18:37:40,067 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:37:40] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 18:37:40,161 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:37:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-11-23 18:53:00,508 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:53:00] "GET / HTTP/1.1" 200 -
+2025-11-23 18:53:00,534 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:53:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 18:53:00,536 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:53:00] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 18:53:00,633 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 18:53:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-11-23 19:00:03,731 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:00:03] "GET / HTTP/1.1" 200 -
+2025-11-23 19:00:03,751 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:00:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-23 19:00:03,753 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:00:03] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 19:00:03,839 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:00:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-11-23 19:03:35,495 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 19:03:35,498 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 19:03:35,548 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.112:5000
+2025-11-23 19:03:35,548 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-23 19:03:35,550 - werkzeug - INFO -  * Restarting with stat
+2025-11-23 19:03:35,835 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 19:03:35,836 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 19:03:35,853 - werkzeug - WARNING -  * Debugger is active!
+2025-11-23 19:03:35,856 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-23 19:03:54,080 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 19:03:54,081 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 19:03:54,109 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.112:5000
+2025-11-23 19:03:54,109 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-23 19:03:54,112 - werkzeug - INFO -  * Restarting with stat
+2025-11-23 19:03:54,373 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-23 19:03:54,374 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-23 19:03:54,390 - werkzeug - WARNING -  * Debugger is active!
+2025-11-23 19:03:54,393 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-23 19:03:59,038 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:03:59] "GET / HTTP/1.1" 200 -
+2025-11-23 19:03:59,324 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:03:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 19:03:59,326 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:03:59] "[36mGET /static/images/maha.png HTTP/1.1[0m" 304 -
+2025-11-23 19:03:59,387 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:03:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-11-23 19:03:59,929 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-11-23 19:03:59,931 - werkzeug - INFO - 127.0.0.1 - - [23/Nov/2025 19:03:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-25 17:47:34,414 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 17:47:34,418 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 17:47:51,269 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 17:47:51,272 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 17:48:29,094 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 17:48:29,097 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 17:48:29,238 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.112:5001
+2025-11-25 17:48:29,238 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 17:48:29,242 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 17:48:29,948 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 17:48:29,951 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 17:48:29,987 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 17:48:29,994 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 17:48:38,095 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:38] "GET / HTTP/1.1" 200 -
+2025-11-25 17:48:38,434 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-25 17:48:38,449 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:38] "GET /static/images/maha.png HTTP/1.1" 200 -
+2025-11-25 17:48:38,547 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:38] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-11-25 17:48:39,038 - __main__ - WARNING - 404 error: http://127.0.0.1:5001/favicon.ico
+2025-11-25 17:48:39,038 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
