@@ -238,9 +238,11 @@ def internal_error(error):
     }), 500
 
 if __name__ == "__main__":
+    # Use PORT environment variable when provided (Render sets $PORT)
+    port = int(os.getenv('PORT', 5001))
     if FLASK_ENV == 'production':
         logger.info("Starting Flask app in PRODUCTION mode")
-        app.run(debug=False, host="0.0.0.0", port=int(os.getenv('PORT', 5001)))
+        app.run(debug=False, host="0.0.0.0", port=port)
     else:
         logger.info("Starting Flask app in DEVELOPMENT mode")
-        app.run(debug=FLASK_DEBUG, host="0.0.0.0", port=5001)
+        app.run(debug=FLASK_DEBUG, host="0.0.0.0", port=port)

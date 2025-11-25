@@ -104,3 +104,15 @@
 2025-11-25 17:48:38,547 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:38] "GET /static/js/script.js HTTP/1.1" 200 -
 2025-11-25 17:48:39,038 - __main__ - WARNING - 404 error: http://127.0.0.1:5001/favicon.ico
 2025-11-25 17:48:39,038 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 17:48:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-25 18:04:13,275 - werkzeug - INFO -  * Detected change in 'd:\\Portfolio\\app.py', reloading
+2025-11-25 18:04:13,361 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:04:14,231 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:04:14,234 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:04:14,289 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:04:14,296 - werkzeug - INFO -  * Debugger PIN: 615-009-449
+2025-11-25 18:04:42,876 - werkzeug - INFO -  * Detected change in 'd:\\Portfolio\\app.py', reloading
+2025-11-25 18:04:42,942 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 18:04:43,633 - __main__ - WARNING - Configuration warnings: MAIL_USERNAME is not set, MAIL_PASSWORD is not set, RECIPIENT_EMAIL is not set
+2025-11-25 18:04:43,635 - __main__ - INFO - Starting Flask app in DEVELOPMENT mode
+2025-11-25 18:04:43,673 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 18:04:43,683 - werkzeug - INFO -  * Debugger PIN: 615-009-449
